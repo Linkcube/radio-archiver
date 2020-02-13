@@ -1,0 +1,41 @@
+{
+  "name": "radio-archiver",
+  "version": "1.0.0",
+  "description": "Combination of svelte-radio-interface and Nora using electron",
+  "bugs": {
+    "url": "https://github.com/Linkcube/radio-archiver/issues"
+  },
+  "homepage": "https://github.com/Linkcube/radio-archiver#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Linkcube/radio-archiver.git"
+  },
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "dist": "electron-builder",
+    "dist:dir": "npm dist --dir -c.compression=store -c.mac.identity=null"
+  },
+  "author": "linkcube",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^7.1.12",
+    "electron-builder": "^22.3.2",
+    "ts-node": "^8.6.2"
+  },
+  "dependencies": {
+    "linkcube-nora": "~1.1.0",
+    "svelte-radio-interface": "~1.1.1",
+    "tree-kill": "^1.2.2",
+    "winston": "^3.2.1"
+  },
+  "build": {
+    "appId": "com.electron.radio-archiver",
+    "files": [
+      "main.js",
+      "node_modules"
+    ],
+    "asar": false
+  }
+}
