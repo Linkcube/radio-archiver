@@ -1,6 +1,6 @@
 {
   "name": "radio-archiver",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Combination of svelte-radio-interface and Nora using electron",
   "bugs": {
     "url": "https://github.com/Linkcube/radio-archiver/issues"
@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "linkcube-nora": "~1.1.0",
-    "svelte-radio-interface": "~1.1.1",
+    "svelte-radio-interface": "~1.1.3",
     "tree-kill": "^1.2.2",
     "winston": "^3.2.1"
   },
